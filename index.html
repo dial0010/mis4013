@@ -10,12 +10,6 @@
     .accordion-button::after {
       content: none; /* Remove the default icon */
     }
-    .accordion-body {
-      display: none; /* Hide all content by default */
-    }
-    .accordion-body.show {
-      display: block; /* Show content when active */
-    }
   </style>
 </head>
 <body>
@@ -30,9 +24,8 @@
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-          <div class="accordion-body" id="contentOne">
-            <p>Welcome to the Babysitter page!</p>
-            <a href="#" onclick="showContent('contentOne')">View Content</a>
+          <div class="accordion-body">
+            <a href="babysitter.html" target="_blank">Go to Babysitter Page</a>
           </div>
         </div>
       </div>
@@ -44,9 +37,8 @@
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body" id="contentTwo">
-            <p>Welcome to the Dog Sitter page!</p>
-            <a href="#" onclick="showContent('contentTwo')">View Content</a>
+          <div class="accordion-body">
+            <a href="dogsitter.html" target="_blank">Go to Dog Sitter Page</a>
           </div>
         </div>
       </div>
@@ -58,9 +50,8 @@
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body" id="contentThree">
-            <p>Welcome to the Cat Sitter page!</p>
-            <a href="#" onclick="showContent('contentThree')">View Content</a>
+          <div class="accordion-body">
+            <a href="catsitter.html" target="_blank">Go to Cat Sitter Page</a>
           </div>
         </div>
       </div>
@@ -72,9 +63,8 @@
           </button>
         </h2>
         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body" id="contentFour">
-            <p>Welcome to the Fish Sitter page!</p>
-            <a href="#" onclick="showContent('contentFour')">View Content</a>
+          <div class="accordion-body">
+            <a href="fishsitter.html" target="_blank">Go to Fish Sitter Page</a>
           </div>
         </div>
       </div>
@@ -86,9 +76,8 @@
           </button>
         </h2>
         <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body" id="contentFive">
-            <p>Welcome to the Bird Sitter page!</p>
-            <a href="#" onclick="showContent('contentFive')">View Content</a>
+          <div class="accordion-body">
+            <a href="birdsitter.html" target="_blank">Go to Bird Sitter Page</a>
           </div>
         </div>
       </div>
@@ -97,17 +86,5 @@
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function showContent(contentId) {
-      const contents = document.querySelectorAll('.accordion-body');
-      contents.forEach(content => {
-        if (content.id === contentId) {
-          content.classList.toggle('show');
-        } else {
-          content.classList.remove('show');
-        }
-      });
-    }
-  </script>
 </body>
 </html>
