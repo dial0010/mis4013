@@ -1,11 +1,11 @@
 <?php
-$pageTitle = "Post";
+$pageTitle = "Get";
 include "view-header.php";
 ?>
-    <h1>Post</h1>
-<form method="post" action="post-result.php">
+    <h1>Get</h1>
+<form method="get" action="get-result.php">
   <input type="text" name="my-name">
-  <input type="submit" value="Post data">
+  <input type="submit" value="Get data">
 </form>
 <?php
 include "view-footer.php";
